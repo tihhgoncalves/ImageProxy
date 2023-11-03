@@ -18,14 +18,14 @@ O ImageProxy é um servidor de proxy de imagens leve que permite carregar imagen
 Para começar com o ImageProxy, inclua o script `imageproxy.js` em seu arquivo HTML logo antes da tag `</body>`, e inicialize-o com a configuração desejada:
 
 ```html
-<img src="https://seu-proxy.vercel.app/proxy?url=https://example.com/imagem.jpg">
+<img src="https://image-proxy.rocket.srv.br?url=http://pudim.com.br/pudim.jpg">
 ```
 
 ## Configuração
 
 - `url`: URL da imagem a ser protegida com segurança.
 
-> 💡 **Dica:** A configuração `imageUrl` é obrigatória, enquanto as outras são opcionais para personalizar ainda mais sua experiência.
+> 💡 **Dica:** A configuração `url` é obrigatória, enquanto as outras são opcionais para personalizar ainda mais sua experiência.
 
 ## Mantenedor
 

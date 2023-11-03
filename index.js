@@ -5,7 +5,7 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 
 // Rota para redirecionar as solicitações de imagens
-app.get('/proxy', (req, res) => {
+app.get('/', (req, res) => {
   const imageUrl = req.query.url; // Recebe a URL da imagem a ser carregada
 
   if (!imageUrl) {
