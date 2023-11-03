@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://example.com/your-logo.png" alt="ImageProxy Logo">
+  <img src="https://media.tenor.com/GVbLnw73qD8AAAAi/dancing-duck-karlo.gif" width="150" alt="ImageProxy">
 </p>
 
 # ImageProxy
