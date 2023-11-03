@@ -13,12 +13,18 @@ app.get('/', (req, res) => {
     return;
   }
 
-  // Faz uma solicitação para a URL da imagem
-  request(imageUrl)
-    .on('error', (err) => {
-      res.status(500).send(`Erro ao carregar a imagem: ${err.message}`);
-    })
-    .pipe(res);
+  // Verifica se a URL é HTTPS
+  if (imageUrl.startsWith('https://')) {
+    // Se for HTTPS, redireciona diretamente para a URL da imagem
+    res.redirect(imageUrl);
+  } else {
+    // Se for HTTP, faz uma solicitação para a URL da imagem via proxy
+    request(imageUrl)
+      .on('error', (err) => {
+        res.status(500).send(`Erro ao carregar a imagem: ${err.message}`);
+      })
+      .pipe(res);
+  }
 });
 
 app.listen(PORT, () => {

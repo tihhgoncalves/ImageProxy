@@ -15,11 +15,13 @@ O ImageProxy é um servidor de proxy de imagens leve que permite carregar imagen
 
 ## Como Usar
 
-Para começar com o ImageProxy, inclua o script `imageproxy.js` em seu arquivo HTML logo antes da tag `</body>`, e inicialize-o com a configuração desejada:
+Para utilizar o ImageProxy, basta você adicionar um prefixo antes das suas imagens como no exemplo a seguir:
 
 ```html
 <img src="https://image-proxy.rocket.srv.br?url=http://pudim.com.br/pudim.jpg">
 ```
+
+ > ⚠️ Caso a URL enviada já seja uma HTTPS, o script simplesmente irá redirecionar sem nenhum processamento. Assim, garantirá melhor desempenho na resposta, além de que você não precisará verificar antes de enviar as imagens se elas realmente são HTTP.
 
 ## Configuração
 
