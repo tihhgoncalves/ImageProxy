@@ -15,17 +15,38 @@ O ImageProxy é um servidor de proxy de imagens leve que permite carregar imagen
 
 ## Como Usar
 
-Para começar com o ImageProxy, inclua o script `imageproxy.js` em seu arquivo HTML logo antes da tag `</body>`, e inicialize-o com a configuração desejada:
+Para utilizar o ImageProxy, basta você adicionar um prefixo antes das suas imagens como no exemplo a seguir:
 
 ```html
-<img src="https://seu-proxy.vercel.app/proxy?url=https://example.com/imagem.jpg">
+<img src="https://image-proxy.rocket.srv.br?url=http://pudim.com.br/pudim.jpg">
 ```
+
+⚠️ **Aviso Importante** ⚠️
+
+Se a URL da imagem contiver caracteres especiais, como "&" ou "#", é necessário realizar a codificação de URL antes de incluí-la nas solicitações ao servidor proxy. URLs malformadas podem causar erros ou resultados inesperados.
+
+Para codificar uma URL, você pode usar uma função JavaScript, como `encodeURIComponent()`, para garantir que a URL seja formatada corretamente. 
+
+Exemplo em JavaScript:
+```javascript
+const imageUrl = "http://example.com/image.jpg?param1=value1&param2=value2";
+const encodedUrl = encodeURIComponent(imageUrl);
+```
+
+
+Exemplo em PHP:
+```php
+$imageUrl = "http://example.com/image.jpg?param1=value1&param2=value2";
+$encodedUrl = urlencode($imageUrl);
+```
+
+ > ⚠️ Caso a URL enviada já seja uma HTTPS, o script simplesmente irá redirecionar sem nenhum processamento. Assim, garantirá melhor desempenho na resposta, além de que você não precisará verificar antes de enviar as imagens se elas realmente são HTTP.
 
 ## Configuração
 
 - `url`: URL da imagem a ser protegida com segurança.
 
-> 💡 **Dica:** A configuração `imageUrl` é obrigatória, enquanto as outras são opcionais para personalizar ainda mais sua experiência.
+> 💡 **Dica:** A configuração `url` é obrigatória, enquanto as outras são opcionais para personalizar ainda mais sua experiência.
 
 ## Mantenedor
 
