@@ -21,6 +21,25 @@ Para utilizar o ImageProxy, basta você adicionar um prefixo antes das suas imag
 <img src="https://image-proxy.rocket.srv.br?url=http://pudim.com.br/pudim.jpg">
 ```
 
+⚠️ **Aviso Importante** ⚠️
+
+Se a URL da imagem contiver caracteres especiais, como "&" ou "#", é necessário realizar a codificação de URL antes de incluí-la nas solicitações ao servidor proxy. URLs malformadas podem causar erros ou resultados inesperados.
+
+Para codificar uma URL, você pode usar uma função JavaScript, como `encodeURIComponent()`, para garantir que a URL seja formatada corretamente. 
+
+Exemplo em JavaScript:
+```javascript
+const imageUrl = "http://example.com/image.jpg?param1=value1&param2=value2";
+const encodedUrl = encodeURIComponent(imageUrl);
+```
+
+
+Exemplo em PHP:
+```php
+$imageUrl = "http://example.com/image.jpg?param1=value1&param2=value2";
+$encodedUrl = urlencode($imageUrl);
+```
+
  > ⚠️ Caso a URL enviada já seja uma HTTPS, o script simplesmente irá redirecionar sem nenhum processamento. Assim, garantirá melhor desempenho na resposta, além de que você não precisará verificar antes de enviar as imagens se elas realmente são HTTP.
 
 ## Configuração
