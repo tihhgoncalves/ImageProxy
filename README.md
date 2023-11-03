@@ -65,12 +65,22 @@ Nossa liga de super coders está sempre pronta para ação! 💥
 Este projeto foi criado por **[Tihh Gonçalves](https://github.com/tihhgoncalves)**.
 
 [![Github](https://img.shields.io/badge/GitHub-181717.svg?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/tihhgoncalves)
-
 [![Telegram](https://img.shields.io/badge/Telegram-26A5E4.svg?style=for-the-badge&logo=Telegram&logoColor=white)](https://t.me/seutelegram)
 
 ## Suporte
 
 Para relatar bugs ou solicitar novas funcionalidades, por favor, abra uma [issue](https://github.com/tihhgoncalves/imageproxy/issues) no GitHub. Sua contribuição é muito apreciada!
+
+## Próximas Atualizações
+
+Estamos sempre trabalhando para melhorar o ImageProxy e adicionar novos recursos úteis. Aqui estão algumas das próximas atualizações que estamos planejando:
+
+- **Parâmetro "noimagem"**: Em uma versão futura, estamos planejando adicionar suporte para um parâmetro chamado "noimagem". Quando a URL da imagem não existir ou retornar um erro, você poderá usar esse parâmetro para especificar uma imagem alternativa, que será exibida no lugar da imagem ausente. Isso garantirá uma experiência mais consistente e amigável para seus usuários.
+
+Fique atento para as próximas versões do ImageProxy, pois estamos trabalhando duro para torná-lo ainda mais poderoso e versátil!
+
+Se você tiver sugestões ou recursos que gostaria de ver implementados, sinta-se à vontade para abrir uma [issue](https://github.com/tihhgoncalves/imageproxy/issues) no GitHub. Adoraríamos ouvir sua opinião e suas ideias.
+
 
 ## Versões
 
